@@ -6,33 +6,24 @@ using System.Threading.Tasks;
 
 namespace Design_Patterns.Builder
 {
-    class LaptopBuilderNum2
+   public class LaptopBuilderNum2 : LaptopBuilder
     {
-        private Laptop Laptop;
+
         private readonly int _num = 2;
 
-        public LaptopBuilderNum2()
+        public override void AddCPU()
         {
-            Laptop = new Laptop();
-        }
-        public void AddCPU()
-        {
-            Laptop.CPU = _num;
+            Get().CPU = _num;
         }
 
-        public void AddGPU()
+        public override void AddGPU()
         {
-            Laptop.GPU = _num;
+            Get().GPU = _num;
         }
 
-        public void AddRAM()
+        public override void AddRAM()
         {
-            Laptop.RAM = _num;
-        }
-
-        public Laptop Build()
-        {
-            return Laptop;
+            Get().RAM = _num;
         }
     }
 }

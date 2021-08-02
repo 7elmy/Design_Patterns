@@ -8,23 +8,22 @@ namespace Design_Patterns.Builder
 {
    public class LaptopDirector
     {
-        private ILaptopBuilder LaptopBuilder;
-        public void SetBuilder(ILaptopBuilder laptopBuilder)
+
+        public Laptop FullBuild(LaptopBuilder laptopBuilder)
         {
-            LaptopBuilder = laptopBuilder;
-        }
-        
-        public void FullBuild()
-        {
-            LaptopBuilder.AddCPU();
-            LaptopBuilder.AddGPU();
-            LaptopBuilder.AddRAM();
+            laptopBuilder.AddCPU();
+            laptopBuilder.AddGPU();
+            laptopBuilder.AddRAM();
+
+            return laptopBuilder.Build();
         }
 
-        public void BuildWithoutRAM()
+        public Laptop BuildWithoutRAM(LaptopBuilder laptopBuilder)
         {
-            LaptopBuilder.AddCPU();
-            LaptopBuilder.AddGPU();
+            laptopBuilder.AddCPU();
+            laptopBuilder.AddGPU();
+
+            return laptopBuilder.Build();
         }
 
 
