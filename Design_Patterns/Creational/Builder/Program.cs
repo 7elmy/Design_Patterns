@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Design_Patterns.Builder
+namespace Design_Patterns.Creational.Builder
 {
 
     class Program

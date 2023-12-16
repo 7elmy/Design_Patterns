@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Design_Patterns.Builder
+namespace Design_Patterns.Creational.Builder
 {
-    public class LaptopBuilderNum1 : LaptopBuilder
+    public class LaptopBuilderNum2 : LaptopBuilder
     {
 
-        private readonly int _num = 1;
+        private readonly int _num = 2;
 
         public override void AddCPU()
         {
@@ -25,7 +25,5 @@ namespace Design_Patterns.Builder
         {
             Get().RAM = _num;
         }
-
-       
     }
 }

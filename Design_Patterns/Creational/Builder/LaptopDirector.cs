@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Design_Patterns.Builder
+namespace Design_Patterns.Creational.Builder
 {
-   public class LaptopDirector
+    public class LaptopDirector
     {
 
         public Laptop FullBuild(LaptopBuilder laptopBuilder)

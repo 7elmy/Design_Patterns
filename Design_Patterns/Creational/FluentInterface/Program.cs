@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Design_Patterns.FluentInterface
+namespace Design_Patterns.Creational.FluentInterface
 {
     class Program
     {
